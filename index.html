@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Артём Богачёв, C++ разработчик. Опыт в Unreal Engine 5, игровых механиках и интерактивной рекламе. Резюме и проекты.">
+  <meta name="theme-color" content="#111217">
+  <title>Артём Богачёв — C++ разработчик</title>
+  <link rel="alternate" hreflang="ru" href="/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/interactions.js"></script>
+</head>
+<body id="top">
+  <div class="ambient" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="none" fill="none">
+      <defs>
+        <linearGradient id="trace-light" gradientUnits="userSpaceOnUse" x2="1440">
+          <stop offset="0" stop-color="#d9f77d" stop-opacity=".35"/>
+          <stop offset=".34" stop-color="#d9f77d" stop-opacity=".45"/>
+          <stop offset=".57" stop-color="#d9f77d"/>
+        </linearGradient>
+        <path id="trace-a" pathLength="100" vector-effect="non-scaling-stroke" d="M-20 124H296l48 48h214l44-44h420l56-56h382"/>
+        <path id="trace-b" pathLength="100" vector-effect="non-scaling-stroke" d="M-20 482H136l64-64h267l52 52h288l54-54h221l60 60h318"/>
+        <path id="trace-c" pathLength="100" vector-effect="non-scaling-stroke" d="M-20 752H284l54-54h401l82 82h256l51-51h332"/>
+        <path id="trace-d" pathLength="100" vector-effect="non-scaling-stroke" d="M1240-20v242l-56 56v238l70 70v334"/>
+      </defs>
+      <g class="ambient-traces">
+        <use href="#trace-a"/><use href="#trace-b"/><use href="#trace-c"/><use href="#trace-d"/>
+      </g>
+      <g class="ambient-pulses">
+        <use class="ambient-pulse" href="#trace-a"/><use class="ambient-pulse" href="#trace-b"/>
+        <use class="ambient-pulse" href="#trace-c"/><use class="ambient-pulse" href="#trace-d"/>
+      </g>
+    </svg>
+  </div>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top" aria-label="Артём Богачёв, к началу">
+        <img src="/assets/mark.svg" alt="" width="36" height="36">
+        <span>AB<span class="quiet"> / </span>PORTFOLIO</span>
+      </a>
+      <nav aria-label="Разделы сайта">
+        <a href="#projects">Проекты</a>
+        <a href="#experience">Опыт</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="topbar-actions">
+        <div class="locale-picker" role="group" aria-label="Язык сайта">
+          <a href="/" hreflang="ru" lang="ru" aria-label="Русский" aria-current="page">RU</a>
+          <a href="/en/" hreflang="en" lang="en" aria-label="English" aria-current="false">EN</a>
+        </div>
+        <button type="button" class="motion-toggle" data-motion-toggle hidden aria-pressed="true" aria-label="Анимация фона" title="Анимация фона">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 11h4l2-5 4 8 2-4h6"/></svg>
+          <span>Анимация</span>
+        </button>
+        <a class="top-cv" href="/assets/Artem_Bogachev_CV_RU.pdf" download>CV (RU) <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="shell" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> C++ SOFTWARE ENGINEER</div>
+        <h1 id="hero-title">Артём<br>Богачёв</h1>
+        <p class="hero-role">Unreal Engine 5 <b>·</b> Gameplay <b>·</b> Playable Ads</p>
+        <p class="hero-intro">Разрабатываю игровые механики и интерактивную рекламу. Занимаюсь оптимизацией, интеграцией SDK и отладкой.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">Смотреть проекты <span aria-hidden="true">↘</span></a>
+          <a class="button secondary" href="/assets/Artem_Bogachev_CV_RU.pdf" download>Скачать CV <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <section class="schematic" data-study data-phase="ready" data-phases="{&quot;ready&quot;:{&quot;button&quot;:&quot;Играть&quot;,&quot;message&quot;:&quot;Отбейте мяч и разбейте все 15 блоков.&quot;},&quot;playing&quot;:{&quot;button&quot;:&quot;Пауза&quot;,&quot;message&quot;:&quot;Двигайте платформу, чтобы отбить мяч.&quot;},&quot;paused&quot;:{&quot;button&quot;:&quot;Продолжить&quot;,&quot;message&quot;:&quot;Пауза.&quot;},&quot;serve&quot;:{&quot;button&quot;:&quot;Подать мяч&quot;,&quot;message&quot;:&quot;Мяч потерян. Подайте следующий.&quot;},&quot;won&quot;:{&quot;button&quot;:&quot;Играть снова&quot;,&quot;message&quot;:&quot;Победа! Все 15 блоков разбиты.&quot;},&quot;lost&quot;:{&quot;button&quot;:&quot;Играть снова&quot;,&quot;message&quot;:&quot;Игра окончена. Попробуйте ещё раз.&quot;}}" aria-labelledby="study-title">
+        <div class="diagram-top"><span id="study-title"><i></i> GAMEPLAY STUDY</span><span>МИНИ-ИГРА</span></div>
+        <div class="study-field" tabindex="0" role="group" aria-label="Игровое поле" aria-describedby="study-help">
+          <svg class="diagram" viewBox="0 0 480 348" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+                <path d="M22 0H0V22" stroke="#353740" stroke-opacity=".65"/>
+              </pattern>
+              <pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <path d="M0 0V5" stroke="#d9f77d" stroke-opacity=".6"/>
+              </pattern>
+            </defs>
+            <rect x="41" y="27" width="398" height="312" rx="2" fill="url(#grid)" stroke="#343741"/>
+            <path d="M41 47V27h20m358 0h20v20M41 319v20h20m358 0h20v-20" stroke="#989d95" stroke-width="1.5"/>
+            <path d="M100 71H381M100 307H381M100 71V307M381 71V307" stroke="#626767" stroke-dasharray="3 5"/>
+            <g class="study-bricks" fill="#252731" stroke="#565b61">
+              <rect x="116" y="87" width="44" height="16" rx="2"/><rect x="167" y="87" width="44" height="16" rx="2"/><rect x="218" y="87" width="44" height="16" rx="2"/><rect x="269" y="87" width="44" height="16" rx="2"/><rect x="320" y="87" width="44" height="16" rx="2"/>
+              <rect x="116" y="112" width="44" height="16" rx="2"/><rect x="167" y="112" width="44" height="16" rx="2"/><rect x="218" y="112" width="44" height="16" rx="2"/><rect x="269" y="112" width="44" height="16" rx="2"/><rect x="320" y="112" width="44" height="16" rx="2"/>
+              <rect x="116" y="137" width="44" height="16" rx="2"/><rect x="167" y="137" width="44" height="16" rx="2"/><rect x="218" y="137" width="44" height="16" rx="2"/><rect x="269" y="137" width="44" height="16" rx="2"/><rect x="320" y="137" width="44" height="16" rx="2"/>
+            </g>
+            <g class="study-preview">
+              <rect x="269" y="137" width="44" height="16" rx="2" fill="#d9f77d" fill-opacity=".15" stroke="#d9f77d"/>
+              <rect x="270" y="138" width="42" height="14" rx="2" fill="url(#hatch)"/>
+              <path d="m181 283 53-77 54-53 93 68-42 31" stroke="#d9f77d" stroke-width="1.5" stroke-dasharray="5 6"/>
+              <path d="m346 244-7 8 10-2" stroke="#d9f77d" stroke-width="1.5"/>
+              <circle cx="234" cy="206" r="25" stroke="#d9f77d" stroke-opacity=".27"/>
+              <circle cx="234" cy="206" r="15" stroke="#d9f77d" stroke-opacity=".5"/>
+              <circle cx="234" cy="206" r="6" fill="#d9f77d"/>
+              <path d="M250 206h36l14-17h35" stroke="#a6af8d" stroke-width="1"/>
+              <circle cx="335" cy="189" r="2" fill="#d9f77d"/>
+              <rect x="147" y="287" width="69" height="8" rx="4" fill="#d9f77d"/>
+              <path d="M181 302v13m-6 0h12" stroke="#d9f77d" stroke-opacity=".6"/>
+              <g fill="#9a9f94" font-family="monospace" font-size="9" letter-spacing="1">
+                <text x="100" y="61">PLAYFIELD</text><text x="342" y="61">2D / XY</text>
+                <text x="306" y="182">BALL</text><text x="194" y="319">PADDLE</text>
+              </g>
+            </g>
+            <g class="study-pieces">
+              <rect data-paddle x="209" y="287" width="62" height="8" rx="4" fill="#d9f77d"/>
+              <circle data-ball cx="240" cy="280" r="5" fill="#f1f0e9"/>
+            </g>
+          </svg>
+        </div>
+        <div class="study-panel">
+          <div class="study-controls">
+            <div class="study-buttons">
+              <button type="button" class="button primary" data-play disabled>Играть</button>
+              <button type="button" class="button secondary" data-restart disabled>Заново</button>
+            </div>
+            <div class="study-score">
+              <span>Счёт <strong data-score>0</strong></span>
+              <span>Жизни <strong data-lives>3</strong></span>
+            </div>
+          </div>
+          <p class="study-status" role="status" data-status>Отбейте мяч и разбейте все 15 блоков.</p>
+          <p id="study-help" class="study-help">← → или A / D · Пробел для паузы. Мышь или палец перемещают платформу.</p>
+          <noscript><p class="study-status">Для игры нужен JavaScript.</p></noscript>
+        </div>
+      </section>
+      <dl class="facts">
+        <div><dt>Опыт</dt><dd>3 года 10 месяцев</dd></div>
+        <div><dt>Локация</dt><dd>Ростов-на-Дону</dd></div>
+        <div><dt>Формат работы</dt><dd>Удалённо</dd></div>
+      </dl>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="section-kicker"><span>01</span> / ПОРТФОЛИО</div>
+      <h2 id="projects-title">Избранные проекты</h2>
+      <article class="project">
+        <figure class="game">
+          <div class="game-bar"><span><i></i> POPCORN.EXE</span><span>WIN32</span></div>
+          <a class="game-image-link" href="/assets/popcorn-gameplay.jpg" aria-label="Увеличить скриншот первого уровня PopCorn" data-screenshot-title="PopCorn · первый уровень">
+            <img src="/assets/popcorn-gameplay.jpg" alt="Первый уровень PopCorn. Платформа и мяч под полем из красных и бирюзовых блоков." width="962" height="652" loading="lazy">
+            <span aria-hidden="true">Увеличить ⤢</span>
+          </a>
+          <figcaption><span>01 / 10</span> Скриншот первого уровня</figcaption>
+        </figure>
+        <div class="project-copy">
+          <div class="eyebrow"><i></i> ИГРА ДЛЯ WINDOWS</div>
+          <h3>PopCorn</h3>
+          <p>Аркада в духе Arkanoid. Игрок управляет платформой, отбивает мяч и разрушает блоки. В десяти уровнях встречаются порталы, монстры и бонусы, которые разделяют мяч, расширяют платформу или добавляют лазер.</p>
+          <p>В коде реализованы обработка столкновений, игровые состояния и отрисовка с двойной буферизацией.</p>
+          <ul class="tags" aria-label="Технологии проекта"><li>C++</li><li>Win32 GDI</li></ul>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/WonVoyage/PopCorn">Исходники на GitHub <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/WonVoyage/PopCorn#build-from-source">Как собрать <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="project project--playable" id="playable-ad" aria-labelledby="ad-title">
+        <div class="ad-shots" role="group" aria-label="Скриншоты интерактивной рекламы">
+          <figure class="game">
+            <a class="game-image-link" href="/assets/playable-tutorial.jpg" aria-label="Увеличить скриншот начала обучения" data-screenshot-title="Начало обучения">
+              <img src="/assets/playable-tutorial.jpg" alt="Герой в подземелье. Игровая подсказка показывает, куда нажать." width="390" height="700" loading="lazy">
+              <span aria-hidden="true">Увеличить ⤢</span>
+            </a>
+            <figcaption><span>01</span> Начало обучения</figcaption>
+          </figure>
+          <figure class="game">
+            <a class="game-image-link" href="/assets/playable-combat.jpg" aria-label="Увеличить скриншот после боя" data-screenshot-title="После боя">
+              <img src="/assets/playable-combat.jpg" alt="Герой после боя. В подземелье видны противники и сундуки." width="390" height="700" loading="lazy">
+              <span aria-hidden="true">Увеличить ⤢</span>
+            </a>
+            <figcaption><span>02</span> После боя</figcaption>
+          </figure>
+        </div>
+        <div class="project-copy">
+          <div class="eyebrow"><i></i> ИНТЕРАКТИВНАЯ РЕКЛАМА · BE NICE GAMES</div>
+          <h3 id="ad-title">Hero Wars</h3>
+          <p>В этой интерактивной рекламе Hero Wars от Be Nice Games игрок ведёт героя по подземелью, сражается с противниками и открывает сундуки. Подсказки показывают, куда нажимать, по ходу игры.</p>
+          <ul class="tags" aria-label="Технологии проекта"><li>C++</li><li>W4</li><li>WebAssembly</li></ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-kicker"><span>02</span> / КАРЬЕРА</div>
+      <h2 id="experience-title">Опыт работы</h2>
+      <div class="timeline">
+        <article class="job">
+          <div class="job-meta"><span class="job-index">01</span><p>янв. 2024 — сент. 2026</p></div>
+          <div>
+            <h3>Be Nice Games</h3>
+            <p class="job-role">C++ разработчик</p>
+            <p>Разрабатывал механики для интерактивной рекламы. Оптимизировал приложения под разные архитектуры и магазины, интегрировал сторонние сервисы и SDK. Исправлял ошибки вместе с командой проекта.</p>
+            <a class="text-link job-project" href="#playable-ad">Смотреть пример рекламы <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="job">
+          <div class="job-meta"><span class="job-index">02</span><p>март 2023 — нояб. 2024</p></div>
+          <div>
+            <h3>Goodini</h3>
+            <p class="job-role">Разработчик Unreal Engine 5</p>
+            <p>Проектировал, разрабатывал и тестировал функциональность коммерческого продукта с нуля до завершения разработки.</p>
+          </div>
+        </article>
+        <article class="job">
+          <div class="job-meta"><span class="job-index">03</span><p>нояб. 2022 — янв. 2023</p></div>
+          <div>
+            <h3>Новые Телеком Решения (НТР)</h3>
+            <p class="job-role">Стажёр-разработчик</p>
+            <p>Разрабатывал программное обеспечение для обработки сообщений.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section-kicker"><span>03</span> / ИНСТРУМЕНТЫ</div>
+      <h2 id="skills-title">Технологии и навыки</h2>
+      <dl class="skill-list">
+        <div><dt>Языки и основы</dt><dd><ul class="tags"><li>C++14 / C++17</li><li>STL</li><li>ООП</li><li>SQL</li></ul></dd></div>
+        <div><dt>Игровая разработка</dt><dd><ul class="tags"><li>Unreal Engine 5</li><li>Unity</li><li>Cocos Creator</li><li>Gameplay</li><li>Playable Ads</li></ul></dd></div>
+        <div><dt>Сборка и отладка</dt><dd><ul class="tags"><li>Visual Studio</li><li>Git</li><li>CMake</li></ul></dd></div>
+        <div><dt>Смежные навыки</dt><dd><ul class="tags"><li>Базы данных и СУБД</li><li>UI / UX</li></ul></dd></div>
+      </dl>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="section-kicker"><span>04</span> / ОБРАЗОВАНИЕ</div>
+      <h2 id="education-title">Университет и языки</h2>
+      <div class="education-grid">
+        <article>
+          <div class="eyebrow">2024 / БАКАЛАВРИАТ</div>
+          <h3>Южный федеральный университет</h3>
+          <p>Прикладная информатика, факультет высоких технологий</p>
+        </article>
+        <article>
+          <div class="eyebrow">ЯЗЫКИ</div>
+          <dl class="languages"><div><dt>Русский</dt><dd>Родной</dd></div><div><dt>Английский</dt><dd>B1 · Средний</dd></div></dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-kicker"><span>05</span> / КОНТАКТЫ</div>
+      <h2 id="contact-title">Связаться со мной</h2>
+      <div class="contact-grid">
+        <a href="mailto:artem.bogachev23@yandex.ru"><span>Электронная почта</span><strong>artem.bogachev23@yandex.ru</strong><b aria-hidden="true">↗</b></a>
+        <a href="https://t.me/WonVoyage"><span>Telegram</span><strong>@WonVoyage</strong><b aria-hidden="true">↗</b></a>
+        <a href="https://github.com/WonVoyage"><span>GitHub</span><strong>WonVoyage</strong><b aria-hidden="true">↗</b></a>
+        <a href="tel:+79180367405"><span>Телефон</span><strong>+7 (918) 036-74-05</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <span>Артём Богачёв <span class="quiet">/</span> C++ Software Engineer</span>
+    <a href="#top">К началу <span aria-hidden="true">↑</span></a>
+  </footer>
+  <dialog class="screenshot-dialog" aria-labelledby="screenshot-title">
+    <div class="screenshot-dialog-bar">
+      <h2 id="screenshot-title">PopCorn · первый уровень</h2>
+      <form method="dialog"><button class="button secondary" autofocus>Закрыть <span aria-hidden="true">×</span></button></form>
+    </div>
+    <img src="/assets/popcorn-gameplay.jpg" width="962" height="652" alt="Первый уровень PopCorn. Платформа и мяч под полем из красных и бирюзовых блоков." loading="lazy">
+  </dialog>
+</body>
+</html>
